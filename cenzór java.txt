@@ -1,0 +1,14 @@
+package elsoproject;
+
+public class ElsoProject {
+
+    public static void main(String[] args) {
+        String result = censoralpha("A barom nagyon aranyos barom","barom","***");
+        System.out.println("Próba" +" "+ result);
+    }
+
+    static String censor(String text,String toChange,String newWord){
+    text=text.replaceAll(toChange, newWord);
+    return text;
+    }
+}
